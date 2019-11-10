@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8">
+	<title>Formulario</title>
+	<style>
+		p{
+			color: white;
+		}
+
+		body{
+			<!-- https://celke.com.br/artigo/tabela-de-cores-html-nome-hexadecimal-rgb -->
+			color: Indigo;
+			background: PaleGreen;
+		}
+	</style>
+</head>
+
+<body>
+	<form action="processa.php" method="post" >
+		<p>
+			<label>Texto:</label>
+			<input type="text" name="texto1" placeholder="mensagem antes de ser clicado">
+
+			<br>
+
+			<label>Senha:</label>
+			<input type="password" name="senha">
+
+			<br>
+
+			<label>oculto:</label>
+			<input type="hidden" name="oculto" value="banana">
+		</p>
+		<br>
+
+		<label>Select:</label>
+		<select>
+			<option value="1">opção 1</option>
+			<option value="2">opção 2</option>
+			<option value="3">opção 3</option>
+			<option value="3">opção 4</option>
+		</select>
+
+		<br>
+
+		<label>Radio:</label><br>
+		<input type="Radio" name="radio1" checked=""> Valor 1
+		<br> 
+		<input type="Radio" name="radio1"> Valor 2
+		<br>
+		<input type="Radio" name="radio1"> Valor 3
+		<br> 
+		<input type="Radio" name="radio1"> Valor 4
+
+		<br>
+		<!-- Checkbox permite selecionar vários itens ao mesmo tempo, ao contrário do radio -->
+
+		<label>Checkbox:</label><br>
+		<input type="checkbox" name="ck1" value="1" checked=""> valor 1
+		<br>
+		<input type="checkbox" name="ck1" value="2" checked=""> valor 2
+		<br>
+		<input type="checkbox" name="ck1" value="3"> valor 3
+		<br>
+		<input type="checkbox" name="ck1" value="4"> valor 4
+		<br>
+
+
+
+
+
+
+
+	</form>
+
+</body>
+
